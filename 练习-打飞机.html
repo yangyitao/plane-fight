@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/GameEngine.js"></script>
+		<script src="MyPlane.js"></script>
+		<script src="Bullet.js"></script>
+		<script src="enemy.js"></script>
+		<script src="common.js"></script>
+		<script>
+
+// 写游戏 ==> 应用程序   ==>  面向对象  (方便、快捷)
+
+// 第一步： 找对象
+// 打飞机的游戏 (找到的对象)
+//  物理引擎 对象 (管理整个游戏，包括背景、什么时候创建敌机、游戏运行位置)、
+//   自己的飞机、敌机、子弹 、 计分面板
+
+//  第二步： 实现对象
+
+//                   属性                                                                 方法
+// 物理引擎对象       颜色、大小、位置、背景图片(节点对象)    开始游戏、创建敌机   
+
+//创建对象的方式
+// 1、字面量    {}
+// 2、构造方法  function Perons() {}
+// 3、原型         Person.prototype 
+
+// 因为 物理引擎只有一个，所以用 字面量的形式会更好
+
+
+
+
+		</script>
+	</head>
+	<body>
+		<div id="main_body" class="main">
+			
+		</div>
+	</body>
+
+<script>
+
+// 【练习】
+//   1、创建游戏引擎
+
+// 【扩展】
+//    创建 自己的飞机
+
+
+onload = function(){
+
+	gameEngine.start();
+
+}
+	window.onblur = function(){
+		clearInterval(myPlane.timer);
+	}
+	window.onfocus = function(){
+		myPlane.fire();
+
+	}
+
+
+</script>
+
+</html>
