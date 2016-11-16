@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2016/10/13 0013.
+ * Created by San-Stu on 2016/10/13 0013.
  */
 var myPlane = {
     ele: null,
