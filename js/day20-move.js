@@ -49,20 +49,13 @@ function startMove(oBox, oAttr, fn)
 				// 继续下一个属性的更新
 				continue;
 				
-				// 什么时候终止定时器？
-				//   【答】所有属性都到达目标位值
-				// 怎么判断 所有属性都到达目标位值？
-				//     1, 定义 flag 为 false
-				//     2, 只要有一个没完成，就设置 flag 为 true
-				//     3, 在循环结束后，判断 flag 的值
-				//           如果为 false，说明全部都完成了
+				// 如果为 false，说明全部都完成了
 				
 				//clearInterval(oBox.timer);
 				
 				// 到达目标位置，调用回调函数，来创建新的定时器
 				//fn && fn();
 				
-				//return ;
 			} else {
 				// 这里是当前属性没有到达目的位置
 				flag = true;
@@ -83,7 +76,7 @@ function startMove(oBox, oAttr, fn)
 			
 			fn && fn();
 			
-			return ; // 可写可不写，因为下面没有代码了
+			return ; 
 		}
 
 	}, 100);
