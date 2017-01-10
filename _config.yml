@@ -1,0 +1,8 @@
+title: Plane-fight
+description: 飞机大战
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
